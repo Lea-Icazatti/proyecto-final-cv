@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <title>Proyecto final</title>
+    <link rel="stylesheet" type="text/css" href="styles/cv.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+</head>
+<body class="fondo">
+    <div class="container-lg">
+        <div class="row">
+
+            <div class="col-lg-12 gx-0 text-center">
+                <div class="imagen-portada">
+                    <div class="filter-blur"> </div>
+                </div>
+
+                <div class="contenido-portada">
+                    <img class="img-thumbnail rounded-circle" src="https://randomuser.me/api/portraits/men/36.jpg" alt="se muestra una imagen de perfil">
+                    <h1 class="texto-nombre">Juan Pérez</h1>
+
+                    <button type="submit" class="btn-contacto" onclick="abrirCont()">Contacto</button>
+                    <div class="popup-contacto" id="popup-contacto">
+                        <div class="mensaje-juan">
+                        <img class="img-thumbnail rounded-circle" src="https://randomuser.me/api/portraits/men/36.jpg" alt="" >
+                        <span class="texto-juan">Hola! hablamos?</span>
+                        </div>
+                        <h2>Contacto</h2>
+                            <p><i class="bi bi-telephone-fill"></i> (644) 947-2751</p>
+                            <p><i class="bi bi-envelope-at-fill"></i> juan.perez@email.com</p>
+                            <p><i class="bi bi-geo-alt-fill"></i> San Francisco, California</p>
+                            <p><i class="bi bi-twitter"></i> juan.Perez</p>
+                        <button type="button" onclick="cerrarCont()">OK</button>
+                    </div>
+
+                    <button type="submit" class="btn-ciberseguridad" onclick="abrirCiber()">Ciberseguridad</button>
+                    <div class="pop-ciber" id="pop-ciber">
+                        <div class="mensaje-juan">
+                        <img class="img-thumbnail rounded-circle" src="https://randomuser.me/api/portraits/men/36.jpg" alt="">
+                        <span class="texto-juan">Hola! soy Juan</span>
+                        </div>
+                        <h2>¿Por qué ciberseguridad?</h2>
+                            <p>Me dedico a la ciberseguridad porque siempre me ha interesado la tecnología y cómo funciona. Desde que era joven, disfrutaba desmontando dispositivos electrónicos y tratando de entender cómo funcionaban</p>
+                        <button type="button" onclick="cerrarCiber()">OK</button>
+                    </div>
+
+                    <button type="submit" class="btn-info" onclick="abrirIn()">Datos p.</button>
+                    <div class="popup-info" id="popup-info">
+                        <div class="mensaje-juan">
+                        <img class="img-thumbnail rounded-circle" src="https://randomuser.me/api/portraits/men/36.jpg" alt="">
+                        <span class="texto-juan">Hola! soy Juan </span>
+                        </div>
+                        <h2>Datos Personales</h2>
+                            <p>Nombre: Juan josé Pérez</p>
+                            <p>Edad: 33 años</p>
+                            <p>Lugar de nacimiento: México</p>
+                            <p>Estado civil: Soltero</p>
+                        <button type="button" onclick="cerrarIn()">OK</button>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="lado-izquierdo col-lg-6 text-center">
+                <h2 class="titulo-informacion"><i class="bi bi-person-fill"></i> Sobre mi</h2>
+                <p class="text-start">Experto en ciberseguridad con más de 5 años de experiencia en la industria. Posee una sólida comprensión de los riesgos cibernéticos y ha implementado medidas efectivas para proteger a las empresas contra amenazas cibernéticas. Juan es un líder en su equipo y un comunicador efectivo, capaz de explicar de manera clara y concisa los riesgos cibernéticos y cómo prevenirlos.</p>
+                <br>
+                <h2 class="titulo-informacion"><i class="bi bi-mortarboard-fill"></i> Educación</h2>
+                <ul class="text-start">
+                    <li class="text-start">Maestría en Ciberseguridad, Universidad de Tecnología, 2018</li>
+                    <li class="text-start">Licenciatura en Ingeniería de Sistemas, Universidad Estatal, 2016</li>
+                </ul>
+                <p class="subtitulo-adicional-gris text-start">(Certificaciones)</p>
+                <ul class="text-start">
+                    <li class="text-start">CISSP (Certified Information Systems Security Professional)</li>
+                    <li class="text-start">CISM (Certified Information Security Manager)</li>
+                    <li class="text-start">CompTIA Security+</li>
+                    <li class="text-start">Certified Incident Handler (GCIH)</li>
+                    <li class="text-start">Certified Cloud Security Professional (CCSP)</li>
+                </ul>
+                <br>
+                <p class="titulo-informacion"><i class="bi bi-house-door-fill"></i> Proyectos personales </p>
+                <ul class="text-start">
+                    <li class="text-start">Desarrollo de una aplicación móvil de seguridad cibernética para ayudar a las empresas a proteger sus datos.</li>
+                    <li class="text-start">Creación de un blog donde comparte consejos y trucos sobre seguridad cibernética y tecnología en general.</li>
+                    <li class="text-start">Realización de investigaciones en el campo de la seguridad cibernética y publicación de artículos académicos en revistas especializadas.</li>
+                </ul>
+            </div>
+
+            <div class="lado-derecho col-lg-6 text-center">
+                <h2 class="titulo-informacion"><i class="bi bi-briefcase-fill"></i> Experiencia laboral</h2>
+                <p class="subtitulo text-start">Ciberseguridad Senior en ABC Technologies </p>
+                <p class="subtitulo-adicional-gris text-start">(2020-actualidad)</p>
+                <ul class="text-start">
+                    <li class="text-start">Lidera y supervisa el equipo de ciberseguridad, asegurándose de que se cumplan los estándares de seguridad cibernética.</li>
+                    <li class="text-start">Implementa una política de seguridad sólida y actualizada para proteger los activos digitales de la empresa.</li>
+                    <li class="text-start">Trabaja en colaboración con el equipo de TI para garantizar la integridad de los sistemas de información de la empresa.</li>
+                </ul>
+                <p class="subtitulo text-start">Especialista en Ciberseguridad en XYZ Inc. </p>
+                <p class="subtitulo-adicional-gris text-start">(2018-2020)</p>
+                <ul class="text-start">
+                    <li class="text-start">Realizó evaluaciones de seguridad periódicas para identificar posibles vulnerabilidades.</li>
+                    <li class="text-start">Implementó soluciones de seguridad para proteger la red de la empresa contra posibles ataques cibernéticos.</li>
+                    <li class="text-start">Capacitó al personal en la importancia de la seguridad cibernética y cómo proteger sus dispositivos y cuentas.</li>
+                </ul>
+                <br>
+                <h2 class="titulo-informacion"><i class="bi bi-tools"></i> Habilidades</h2>
+                <ul class="text-start">
+                    <li class="text-start">Conocimiento sólido de las normativas y estándares de seguridad cibernética, como ISO 27001 y NIST.</li>
+                    <li class="text-start">Experiencia en la implementación de soluciones de seguridad, como firewalls, IDS/IPS y encriptación de datos.</li>
+                    <li class="text-start">Habilidades de comunicación efectivas para explicar de manera clara y concisa los riesgos cibernéticos y cómo prevenirlos.</li>
+                    <li class="text-start">Capacidad para trabajar en equipo y liderar proyectos de seguridad cibernética.</li>
+                </ul>       
+            </div>
+
+        </div>
+    </div>
+    <script src="scripts/popups.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</body>
+</html>

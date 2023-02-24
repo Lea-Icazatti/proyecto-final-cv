@@ -1,0 +1,373 @@
+.fondo {
+    background: rgb(210,210,210);
+    background: linear-gradient(90deg, rgba(210,210,210,1) 0%, rgba(161,161,161,1) 51%, rgba(228,228,228,1) 100%);
+}
+
+.row {
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+}
+
+.col-lg-12 {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagen-portada {
+    width: 100%;
+    height: auto;
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/c/c8/Long_beach3_%28cropped%29.jpg');
+    background-size: 100% 100%;
+}
+
+.filter-blur {
+    backdrop-filter: blur(3px);
+    width: 100%;
+    height: 300px;
+    z-index: 1;
+}
+
+.contenido-portada {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    position: absolute ;
+    z-index: 2;
+}
+
+.img-thumbnail {
+    margin-bottom: 10px;
+}
+
+.texto-nombre {
+    font-family: 'Raleway', sans-serif;
+    color: white;
+    font-weight: 500;
+}
+
+.btn-info {
+    background-color: #9f9f9f00;
+    display: inline-block;
+    padding: 0px 10px 0px 10px;
+    margin: 2px 3px 2px 3px;
+    border: 0.16em solid #ACC8E5;
+    border-radius: 999px;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    color: #ffffff;
+    text-shadow: 0 0.04em 0.04em rgba(255, 255, 255, 0.253);
+    text-align: center;
+    transition: all 0.2s;
+}
+
+.btn-info:hover {
+    color: black;
+    background-color: #ACC8E5;
+    border: 0.16em solid #ACC8E5;
+  }
+
+.btn-ciberseguridad {
+    background-color: #9f9f9f00;
+    display: inline-block;
+    padding: 0px 10px 0px 10px;
+    margin: 2px 3px 2px 3px;
+    border: 0.16em solid rgba(255, 255, 255, 0.634);
+    border-radius: 999px;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    color: #ffffff;
+    text-shadow: 0 0.04em 0.04em rgba(255, 255, 255, 0.253);
+    text-align: center;
+    transition: all 0.2s;
+}
+
+.btn-ciberseguridad:hover {
+    color: black;
+    background-color: rgb(255, 255, 255);
+    border: 0.16em solid rgb(255, 255, 255);
+  }
+
+.btn-contacto {
+    background-color: #d3865900;
+    display: inline-block;
+    padding: 0px 10px 0px 10px;
+    margin: 2px 3px 2px 3px;
+    border: 0.16em solid #e5af8e;
+    border-radius: 999px;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    color: #ffffff;
+    text-shadow: 0 0.04em 0.04em rgba(255, 255, 255, 0.253);
+    text-align: center;
+    transition: all 0.2s;
+}
+
+.btn-contacto:hover {
+    color: black;
+    background-color: #e5af8e;
+    border: 0.16em solid #e5af8e;
+  }
+
+.lado-izquierdo {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    height: auto;
+    background-color: #E1D7C6;
+    perspective: 1000px;
+}
+
+.lado-derecho {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    height: auto;
+    background-color: #ECE8DD;
+}
+
+.titulo-informacion {
+    margin-bottom: 15px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+}
+
+.subtitulo {
+    margin-bottom: 5px;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.subtitulo-adicional-gris {
+    color: gray;
+    padding-left: 60px;
+    padding-top: 0px;
+}
+
+p {
+    padding-left: 30px;
+    padding-right: 30px;
+    font-family: 'Roboto', sans-serif;
+}
+
+ul {
+    margin-left: 30px;
+    padding-right: 30px;
+    font-family: 'Roboto', sans-serif;
+}
+
+li{
+    font-family: 'Roboto', sans-serif;
+}
+
+span {
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 5px;
+}
+
+/**** CONTACTO POPUP ****/
+
+.popup-contacto {
+    margin-top: 150px;
+    width: 400px;
+    height: auto;
+    background-color: #e5af8e;
+    border-radius: 6px;
+    position: absolute;
+    left: 50%;
+    top: 0%;
+    transform: translate(-50%,-50%) scale(0.1);
+    text-align: center;
+    padding: 0px 30px 30px;
+    color: #333;
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+.open-popup-contacto {
+    visibility: visible;
+    top: 58%;
+    transform: translate(-50%,-50%) scale(1);
+}
+
+.popup-contacto img {
+    margin-top: -50px;
+    border-radius: 50px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.popup-contacto h2 {
+    padding-bottom: 10px;
+    font-size: 38px;
+    font-weight: 500;
+    margin: 30px 0 10px;
+}
+
+.popup-contacto button {
+    width: 100px;
+    margin-top: 50px;
+    padding: 10px 0px;
+    background: #6fd649;
+    color: #fff;
+    border: 0;
+    outline: none;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+/**** CIERSEGURIDAD POPUP ****/
+
+.pop-ciber {
+    margin-top: 150px;
+    width: 400px;
+    height: auto;
+    background-color: rgb(186, 186, 186);
+    border-radius: 6px;
+    position: absolute;
+    left: 50%;
+    top: 0%;
+    transform: translate(-50%,-50%) scale(0.1);
+    text-align: center;
+    padding: 0px 30px 30px;
+    color: #333;
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+.open-pop-ciber {
+    visibility: visible;
+    top: 66%;
+    transform: translate(-50%,-50%) scale(1);
+}
+
+.pop-ciber img {
+    margin-top: -50px;
+    border-radius: 50px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.pop-ciber h2 {
+    padding-bottom: 10px;
+    font-size: 38px;
+    font-weight: 500;
+    margin: 30px 0 10px;
+}
+
+.pop-ciber button {
+    width: 100px;
+    margin-top: 50px;
+    padding: 10px 0px;
+    background: #6fd649;
+    color: #fff;
+    border: 0;
+    outline: none;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+/**** DATOS PERSONALES POPUP ****/
+
+.popup-info {
+    margin-top: 150px;
+    width: 400px;
+    height: auto;
+    background-color: #ACC8E5;
+    border-radius: 6px;
+    position: absolute;
+    left: 50%;
+    top: 0%;
+    transform: translate(-50%,-50%) scale(0.1);
+    text-align: center;
+    padding: 0px 30px 30px;
+    color: #333;
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+.open-popup-info {
+    visibility: visible;
+    top: 58%;
+    transform: translate(-50%,-50%) scale(1);
+}
+
+.popup-info img {
+    margin-top: -50px;
+    border-radius: 50px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.popup-info h2 {
+    padding-bottom: 10px;
+    font-size: 38px;
+    font-weight: 500;
+    margin: 30px 0 10px;
+}
+
+.popup-info button {
+    width: 100px;
+    margin-top: 50px;
+    padding: 10px 0px;
+    background: #6fd649;
+    color: #fff;
+    border: 0;
+    outline: none;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.texto-popup {
+    font-size: 40px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+}
+
+/**** TOOLTIP IMAGEN ****/
+
+.mensaje-juan {
+    position: relative;
+    display: inline-block;
+}
+  
+.mensaje-juan .texto-juan {
+    width: 125px;
+    background-color: rgba(232, 232, 232, 0.714);
+    color: #000000;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: -45px;
+    left: 100%;
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+}
+  
+.mensaje-juan .texto-juan::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 100%;
+    margin-top: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent rgba(232, 232, 232, 0.714) transparent transparent;
+}
